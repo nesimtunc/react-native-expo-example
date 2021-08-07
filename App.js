@@ -1,3 +1,8 @@
+import logger from "./src/utility/logger";
+if (__DEV__ === false) {
+  logger.start();
+}
+
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
